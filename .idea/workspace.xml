@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e7ab58a-2a5b-4736-9e6e-ea35c4a1c565" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$17f58c28c036d1e9d942$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$17f58c28c036d1e9d942.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$17f58c28c036d1e9d942.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$d84ec04cdcd92ccff33b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$d84ec04cdcd92ccff33b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$d84ec04cdcd92ccff33b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$dbec47844df262d0141d$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$dbec47844df262d0141d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/config-classes/$dbec47844df262d0141d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/default/player-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/default/player-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-player-build-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLAYER/project/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$459afeef4686b813d191$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$459afeef4686b813d191.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$459afeef4686b813d191.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$a168d8f0ff2069c3fa83$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$a168d8f0ff2069c3fa83.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$a168d8f0ff2069c3fa83.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$c99917f9cd76993b2f3d$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$c99917f9cd76993b2f3d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/config-classes/$c99917f9cd76993b2f3d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tme9-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tme9-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tme9-build-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/ivy-report.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/$global/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/ivySbt/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/update/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/$global/$global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/compile/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/compile/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/unmanagedClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/project/target/streams/runtime/unmanagedJars/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" beforeDir="false" afterPath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Cad-MB"
+  }
+}]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="2b4c6574-b2ca-464c-b12a-7a80a11a9f2c" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Cad-MB/PPC_TME_8",
+    "accountId": "2b4c6574-b2ca-464c-b12a-7a80a11a9f2c"
+  }
+}]]></component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2pLxiCAo4GTKdLv2bc0a7JgV9ek" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ScalaProjectSettings">
+    <option name="migrateConfigurationsNotificationShown" value="true" />
+    <option name="scala3DisclaimerShown" value="true" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e7ab58a-2a5b-4736-9e6e-ea35c4a1c565" name="Changes" comment="" />
+      <created>1732559282425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732559282425</updated>
+      <workItem from="1732559283272" duration="173000" />
+      <workItem from="1732559467500" duration="1377000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1732559912360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732559912360</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+</project>
