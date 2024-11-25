@@ -38,9 +38,13 @@ class BachActor extends Actor {
   def receive = {
     case "START" => {
       println("start")
+      //Question 2
+      val totalDuration = duration(exemple)
+      println(s"Total duration of example: $totalDuration ms")
     }
-
   }
+
+}
 
   /////////////////////////////////////////////////
 
