@@ -38,9 +38,36 @@ class BachActor extends Actor {
   def receive = {
     case "START" => {
       println("start")
+
       //Question 2
       val totalDuration = duration(exemple)
       println(s"Total duration of example: $totalDuration ms")
+
+      //Question 3
+      println("Début du test des fonctions...")
+
+      play(exemple)
+
+      // test copy
+      val copie = copy(exemple)
+      println(s"Copie de l'exemple : $copie")
+
+      // test note_count
+      val nbNotes = note_count(exemple)
+      println(s"Nombre de notes dans l'exemple : $nbNotes")
+      assert(note_count(exemple) == note_count(copie))
+
+      // test stretch
+      val exempleEtire = stretch(exemple, 2.0)
+      println(s"Exemple après étirement : $exempleEtire")
+
+      // comparaison de durées
+      println(s"Durée originale : ${duration(exemple)} ms")
+      println(s"Durée étirée : ${duration(exempleEtire)} ms")
+
+      // jouer l'exemple original et étiré
+      play_midi(exemple, 0)
+      play_midi(exempleEtire, duration(exemple))
     }
   }
 
@@ -101,7 +128,6 @@ class BachActor extends Actor {
       case Parallel(l) => l.foreach(n => play_midi(n, at))
     }
 
-  /*
    // Copy un objet musical
     def copy (obj:ObjectMusical):ObjectMusical =
     obj match {
