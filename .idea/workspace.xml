@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c2593e7-02c0-4dcd-af60-fc623f9e9466" name="Changes" comment="">
+    <list default="true" id="6c2593e7-02c0-4dcd-af60-fc623f9e9466" name="Changes" comment="Question 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" beforeDir="false" afterPath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" afterDir="false" />
     </list>
@@ -88,11 +88,24 @@
       <option name="presentableId" value="Default" />
       <updated>1732644564565</updated>
       <workItem from="1732644566812" duration="102000" />
-      <workItem from="1732644679813" duration="2213000" />
+      <workItem from="1732644679813" duration="3586000" />
     </task>
+    <task id="LOCAL-00001" summary="Question 4">
+      <option name="closed" value="true" />
+      <created>1732651598644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732651598644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Question 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question 4" />
   </component>
 </project>

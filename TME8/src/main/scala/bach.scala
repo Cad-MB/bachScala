@@ -101,6 +101,19 @@ class BachActor extends Actor {
       println(s"Exemple concaténé : $exempleConcat")
       play(exempleConcat)
 
+      //Question 5
+      val testRepeat = repeat(exemple, 3)
+      println(s"Test repeat (exemple répété 3 fois) : $testRepeat")
+      play(testRepeat)
+
+      val testCanon = canon(exemple, 1000)
+      println(s"Test canon (exemple en canon avec 1000ms de décalage) : $testCanon")
+      play(testCanon)
+
+      val testConcat = concat(exemple, transpose(exemple, 12))
+      println(s"Test concat (exemple concaténé avec sa transposition) : $testConcat")
+      play(testConcat)
+
     }
   }
 
@@ -220,18 +233,20 @@ class BachActor extends Actor {
 
 
   // make a sequential avec n fois obj
-    def repeat (obj:ObjectMusical, n:Int):ObjectMusical =
-    //code here
+  def repeat(obj: ObjectMusical, n: Int): ObjectMusical = {
+    Sequential(List.fill(n)(copy(obj)))
+  }
 
   // make obj en parallele avec lui meme avec un decalage de n ms.
-    def canon (obj:ObjectMusical, n:Int):ObjectMusical =
-    //code here
+  def canon(obj: ObjectMusical, n: Int): ObjectMusical = {
+    Parallel(List(obj, shift(obj, n)))
+  }
 
 
   //  Met obj1 et obj2 en seqeunce
-    def concat (obj1:ObjectMusical, obj2:ObjectMusical):ObjectMusical =
-    //code here
-  */
+  def concat(obj1: ObjectMusical, obj2: ObjectMusical): ObjectMusical = {
+    Sequential(List(obj1, obj2))
+  }
 
   //Question 5 BACH
   val voix1 = Sequential(List(
@@ -272,11 +287,32 @@ class BachActor extends Actor {
     Note(52, 125, 100), Note(53, 125, 100), Note(55, 125, 100),
     Note(58, 125, 100), Note(57, 125, 100), Note(55, 125, 100)))
 
-  /*
-  def canon_Bach ():ObjectMusical = {
-      // ????
-    }
-  */
+
+def canon_Bach(): ObjectMusical = {
+  // Première voix : thème répété 6 fois avec transposition progressive
+  val voix1Canon = repeat(voix1, 6)
+  val voix1Transpositions = (0 until 6).foldLeft(voix1Canon: ObjectMusical) { (acc, i) =>
+    concat(acc, transpose(voix1, i * 2))
+  }
+
+  // Deuxième voix : thème répété 6 fois avec transposition progressive
+  val voix2Canon = repeat(voix2, 6)
+  val voix2Transpositions = (0 until 6).foldLeft(voix2Canon: ObjectMusical) { (acc, i) =>
+    concat(acc, transpose(voix2, i * 2))
+  }
+
+  // Troisième voix : deuxième voix transposée d'une quinte (7 demi-tons) et décalée
+  val voix3Base = transpose(voix2, 7)
+  val voix3Canon = repeat(voix3Base, 6)
+  val voix3Transpositions = (0 until 6).foldLeft(voix3Canon: ObjectMusical) { (acc, i) =>
+    concat(acc, transpose(voix3Base, i * 2))
+  }
+  val voix3Decalee = shift(voix3Transpositions, 2000)
+
+  // Résultat final : parallélisme des trois voix
+  Parallel(List(voix1Transpositions, voix2Transpositions, voix3Decalee))
+}
+
 }
 //////////////////////////////////////////////////
 
