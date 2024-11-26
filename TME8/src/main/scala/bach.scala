@@ -41,7 +41,7 @@ class BachActor extends Actor {
 
       //Question 2
       val totalDuration = duration(exemple)
-      println(s"Total duration of example: $totalDuration ms")
+      println(s"Duree totale de l'exemple: $totalDuration ms")
 
       //Question 3
       println("Début du test des fonctions...")
@@ -68,6 +68,39 @@ class BachActor extends Actor {
       // jouer l'exemple original et étiré
       play_midi(exemple, 0)
       play_midi(exempleEtire, duration(exemple))
+
+      // Question 4
+
+      // test transpose
+      val exempleTranspose = transpose(exemple, 12)
+      println(s"Exemple transposé : $exempleTranspose")
+      play(exempleTranspose)
+
+      // test retrograde
+      val exempleRetrograde = retrograde(exemple)
+      println(s"Exemple rétrograde : $exempleRetrograde")
+      play(exempleRetrograde)
+
+      // test mirror
+      val exempleMiroir = mirror(exemple, 60)
+      println(s"Exemple miroir : $exempleMiroir")
+      play(exempleMiroir)
+
+      // test repeat
+      val exempleRepete = repeat(exemple, 3)
+      println(s"Exemple répété : $exempleRepete")
+      play(exempleRepete)
+
+      // test canon
+      val exempleCanon = canon(exemple, 1000)
+      println(s"Exemple en canon : $exempleCanon")
+      play(exempleCanon)
+
+      // test concat
+      val exempleConcat = concat(exemple, transpose(exemple, 12))
+      println(s"Exemple concaténé : $exempleConcat")
+      play(exempleConcat)
+
     }
   }
 
