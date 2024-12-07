@@ -1,4 +1,3 @@
-
 package upmc.akka.culto
 
 import math._
@@ -114,34 +113,36 @@ class BachActor extends Actor {
       println(s"Test concat (exemple concaténé avec sa transposition) : $testConcat")
       play(testConcat)
 
+      val resultatCanonBach = canon_Bach()
+      println(s"Résultat du Canon Bach : $resultatCanonBach")
+      play(resultatCanonBach)
+
     }
   }
-
-}
 
   /////////////////////////////////////////////////
 
   //Question 1
   val exemple = Parallel(List(
-    Sequential(List(        // clé sol
-      Note(60, 1000, 100),  // noire : c4 1000ms
-      Note(62, 500, 100),   // croche : d4 500ms
-      Note(64, 500, 100),   // croche : e4 500ms
-      Rest(500),            // silence d'une croche
-      Note(65, 1000, 100)   // noire : f4 1000ms
+    Sequential(List( // clé sol
+      Note(60, 1000, 100), // noire : c4 1000ms
+      Note(62, 500, 100), // croche : d4 500ms
+      Note(64, 500, 100), // croche : e4 500ms
+      Rest(500), // silence d'une croche
+      Note(65, 1000, 100) // noire : f4 1000ms
     )),
-    Sequential(List(        // clé fa
-      Note(48, 1000, 100),  // noire : c3 1000ms
-      Rest(1000),           // silence d'une noire
-      Note(50, 1000, 100),  // noire : d3 1000ms
-      Rest(1000),           // silence d'une noire
-      Note(52, 1000, 100)   // noire : e3 1000ms
+    Sequential(List( // clé fa
+      Note(48, 1000, 100), // noire : c3 1000ms
+      Rest(1000), // silence d'une noire
+      Note(50, 1000, 100), // noire : d3 1000ms
+      Rest(1000), // silence d'une noire
+      Note(52, 1000, 100) // noire : e3 1000ms
     ))
   ))
 
   //Question 2
 
-  // Calcule la duree d'un objet musical
+  // calcule la duree d'un objet musical
   def duration(obj: ObjectMusical): Int =
     obj match {
       case Note(p, d, v) => d
@@ -168,82 +169,90 @@ class BachActor extends Actor {
       case Sequential(l) => {
         var date = at
         l.foreach(n => {
-          play_midi(n, date); date = date + duration(n)
+          play_midi(n, date);
+          date = date + duration(n)
         })
       }
       case Parallel(l) => l.foreach(n => play_midi(n, at))
     }
 
-   // Copy un objet musical
-    def copy (obj:ObjectMusical):ObjectMusical =
+  // copy un objet musical
+  def copy(obj: ObjectMusical): ObjectMusical =
     obj match {
-      case Note(p,d,v) => Note(p,d,v)
+      case Note(p, d, v) => Note(p, d, v)
       case Rest(d) => Rest(d)
-      case Sequential (l) => Sequential (l.map(copy))
-      case Parallel (l) => Parallel (l.map(copy))
+      case Sequential(l) => Sequential(l.map(copy))
+      case Parallel(l) => Parallel(l.map(copy))
     }
 
-    // Compte le nombre de notes d'un objet musical
-    def note_count (obj:ObjectMusical):Int =
+  // compte le nombre de notes d'un objet musical
+  def note_count(obj: ObjectMusical): Int =
     obj match {
-      case Note(p,d,v) => 1
-      case Parallel (l) => (l.map(note_count)).foldLeft(0)(_+_)
-      case Sequential (l) => (l.map(note_count)).foldLeft(0)(_+_)
+      case Note(p, d, v) => 1
+      case Parallel(l) => (l.map(note_count)).foldLeft(0)(_ + _)
+      case Sequential(l) => (l.map(note_count)).foldLeft(0)(_ + _)
       case _ => 0
     }
 
-    // Strech un objet musical par un factor fact
-    def stretch (obj:ObjectMusical, fact:Double ):ObjectMusical =
+  // strech un objet musical par un factor fact
+  def stretch(obj: ObjectMusical, fact: Double): ObjectMusical =
     obj match {
-      case Note(p,d,v) => Note(p,(d*fact).toInt,v)
-      case Rest(d) => Rest((d*fact).toInt)
-      case Parallel (l) => Parallel (l.map(stretch (_,fact)))
-      case Sequential (l) => Sequential (l.map(stretch (_,fact)))
+      case Note(p, d, v) => Note(p, (d * fact).toInt, v)
+      case Rest(d) => Rest((d * fact).toInt)
+      case Parallel(l) => Parallel(l.map(stretch(_, fact)))
+      case Sequential(l) => Sequential(l.map(stretch(_, fact)))
     }
 
 
   // Question 4
 
-  // Transpose obj de n demitons
-    def transpose (obj:ObjectMusical, n:Int ):ObjectMusical =
-  obj match {
-    case Note(p,d,v) => Note(p+n,d,v)
-    case Rest(d) => Rest(d)
-    case Parallel (l) => Parallel (l.map(transpose (_,n)))
-    case Sequential (l) => Sequential (l.map(transpose (_,n)))
-  }
+  // transpose obj de n demitons
+  def transpose(obj: ObjectMusical, n: Int): ObjectMusical =
+    obj match {
+      case Note(p, d, v) => Note(p + n, d, v)
+      case Rest(d) => Rest(d)
+      case Parallel(l) => Parallel(l.map(transpose(_, n)))
+      case Sequential(l) => Sequential(l.map(transpose(_, n)))
+    }
 
   // mirror de obj au tour du center c
-    def mirror (obj:ObjectMusical, c:Int ):ObjectMusical =
-  obj match {
-    case Note(p,d,v) => Note(c - (p - c),d,v)
-    case Rest(d) => Rest(d)
-    case Parallel (l) => Parallel (l.map(mirror (_,c)))
-    case Sequential (l) => Sequential (l.map(mirror (_,c)))
-  }
+  def mirror(obj: ObjectMusical, c: Int): ObjectMusical =
+    obj match {
+      case Note(p, d, v) => Note(c - (p - c), d, v)
+      case Rest(d) => Rest(d)
+      case Parallel(l) => Parallel(l.map(mirror(_, c)))
+      case Sequential(l) => Sequential(l.map(mirror(_, c)))
+    }
 
   // retrograde un obj
-    def retrograde (obj:ObjectMusical):ObjectMusical =
-  obj match {
-    case Sequential (l) => Sequential (l.reverse.map(retrograde))
-    case o => o
-  }
+  def retrograde(obj: ObjectMusical): ObjectMusical =
+    obj match {
+      case Sequential(l) => Sequential(l.reverse.map(retrograde))
+      case o => o
+    }
 
   //Question 5
 
 
-  // make a sequential avec n fois obj
+  // sequential avec n fois obj
   def repeat(obj: ObjectMusical, n: Int): ObjectMusical = {
     Sequential(List.fill(n)(copy(obj)))
   }
 
-  // make obj en parallele avec lui meme avec un decalage de n ms.
+  // décalage temporel (delay) à un objet musical.
+  def shift(obj: ObjectMusical, delay: Int): ObjectMusical = obj match {
+    case Sequential(elements) => Sequential(elements.map(shift(_, delay)))
+    case Parallel(elements) => Parallel(elements.map(shift(_, delay)))
+    case other => other
+  }
+
+  // obj en parallele avec lui meme avec un decalage de n ms.
   def canon(obj: ObjectMusical, n: Int): ObjectMusical = {
     Parallel(List(obj, shift(obj, n)))
   }
 
 
-  //  Met obj1 et obj2 en seqeunce
+  //  obj1 et obj2 en seqeunce
   def concat(obj1: ObjectMusical, obj2: ObjectMusical): ObjectMusical = {
     Sequential(List(obj1, obj2))
   }
@@ -288,32 +297,33 @@ class BachActor extends Actor {
     Note(58, 125, 100), Note(57, 125, 100), Note(55, 125, 100)))
 
 
-def canon_Bach(): ObjectMusical = {
-  // Première voix : thème répété 6 fois avec transposition progressive
-  val voix1Canon = repeat(voix1, 6)
-  val voix1Transpositions = (0 until 6).foldLeft(voix1Canon: ObjectMusical) { (acc, i) =>
-    concat(acc, transpose(voix1, i * 2))
+  def canon_Bach(): ObjectMusical = {
+    // 1ere voix : thème répété 6 fois avec transposition progressive
+    val voix1Canon = repeat(voix1, 6)
+    val voix1Transpositions = (0 until 6).foldLeft(voix1Canon: ObjectMusical) { (acc, i) =>
+      concat(acc, transpose(voix1, i * 2))
+    }
+
+    // 2eme voix : thème répété 6 fois avec transposition progressive
+    val voix2Canon = repeat(voix2, 6)
+    val voix2Transpositions = (0 until 6).foldLeft(voix2Canon: ObjectMusical) { (acc, i) =>
+      concat(acc, transpose(voix2, i * 2))
+    }
+
+    // 3eme voix : deuxième voix transposée d'une quinte (7 demi-tons) et décalée
+    val voix3Base = transpose(voix2, 7)
+    val voix3Canon = repeat(voix3Base, 6)
+    val voix3Transpositions = (0 until 6).foldLeft(voix3Canon: ObjectMusical) { (acc, i) =>
+      concat(acc, transpose(voix3Base, i * 2))
+    }
+    val voix3Decalee = shift(voix3Transpositions, 2000)
+
+    // result final : parallélisme des trois voix
+    Parallel(List(voix1Transpositions, voix2Transpositions, voix3Decalee))
   }
 
-  // Deuxième voix : thème répété 6 fois avec transposition progressive
-  val voix2Canon = repeat(voix2, 6)
-  val voix2Transpositions = (0 until 6).foldLeft(voix2Canon: ObjectMusical) { (acc, i) =>
-    concat(acc, transpose(voix2, i * 2))
-  }
-
-  // Troisième voix : deuxième voix transposée d'une quinte (7 demi-tons) et décalée
-  val voix3Base = transpose(voix2, 7)
-  val voix3Canon = repeat(voix3Base, 6)
-  val voix3Transpositions = (0 until 6).foldLeft(voix3Canon: ObjectMusical) { (acc, i) =>
-    concat(acc, transpose(voix3Base, i * 2))
-  }
-  val voix3Decalee = shift(voix3Transpositions, 2000)
-
-  // Résultat final : parallélisme des trois voix
-  Parallel(List(voix1Transpositions, voix2Transpositions, voix3Decalee))
 }
 
-}
 //////////////////////////////////////////////////
 
 

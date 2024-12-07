@@ -4,14 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c2593e7-02c0-4dcd-af60-fc623f9e9466" name="Changes" comment="Question 4">
+    <list default="true" id="ebfdffcf-e08b-41e5-9837-dce57ae76bee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PPC_TME_8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPC_TME_8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" beforeDir="false" afterPath="$PROJECT_DIR$/TME8/src/main/scala/bach.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/global-logging/sbt-global-log11264212730334989873.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bach" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,34 +65,43 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2pOkZ3tkxUWNJJudIivd7daY8yk" />
+  <component name="ProjectId" id="2pP7nsn8dWE18XTZdyxa3XddVCR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.bach.executor&quot;: &quot;Run&quot;,
+    &quot;Application.player.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abdel/Documents/Projects/PPC_TME_8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdel\Documents\Projects\PPC_TME_8" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="PPC_TME_8" />
+      <module name="ppc_tme_8_2599" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="PPC_TME_8" />
+      <module name="ppc_tme_8_2599" />
       <option name="filePath" />
       <method v="2" />
     </configuration>
@@ -82,30 +121,45 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6c2593e7-02c0-4dcd-af60-fc623f9e9466" name="Changes" comment="" />
-      <created>1732644564565</created>
+      <changelist id="ebfdffcf-e08b-41e5-9837-dce57ae76bee" name="Changes" comment="" />
+      <created>1732656029776</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732644564565</updated>
-      <workItem from="1732644566812" duration="102000" />
-      <workItem from="1732644679813" duration="3586000" />
+      <updated>1732656029776</updated>
+      <workItem from="1732656031567" duration="913000" />
+      <workItem from="1732656963088" duration="936000" />
+      <workItem from="1732657917684" duration="89000" />
+      <workItem from="1732772190089" duration="815000" />
+      <workItem from="1733258971478" duration="10000" />
+      <workItem from="1733310136029" duration="18000" />
+      <workItem from="1733356674520" duration="491000" />
+      <workItem from="1733357180360" duration="688000" />
+      <workItem from="1733357950516" duration="1008000" />
+      <workItem from="1733359253858" duration="305000" />
+      <workItem from="1733494446309" duration="484000" />
+      <workItem from="1733591817008" duration="2000" />
+      <workItem from="1733605938894" duration="1788000" />
+      <workItem from="1733607758276" duration="338000" />
+      <workItem from="1733608109552" duration="564000" />
+      <workItem from="1733608688869" duration="133000" />
+      <workItem from="1733608837313" duration="123000" />
+      <workItem from="1733610566923" duration="885000" />
+      <workItem from="1733612902820" duration="1106000" />
     </task>
-    <task id="LOCAL-00001" summary="Question 4">
-      <option name="closed" value="true" />
-      <created>1732651598644</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732651598644</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Question 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question 4" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
