@@ -45,7 +45,7 @@ class BachActor extends Actor {
       //Question 3
       println("Début du test des fonctions...")
 
-      play(exemple)
+      //play(exemple)
 
       // test copy
       val copie = copy(exemple)
@@ -65,53 +65,53 @@ class BachActor extends Actor {
       println(s"Durée étirée : ${duration(exempleEtire)} ms")
 
       // jouer l'exemple original et étiré
-      play_midi(exemple, 0)
-      play_midi(exempleEtire, duration(exemple))
+      //play_midi(exemple, 0)
+      //play_midi(exempleEtire, duration(exemple))
 
       // Question 4
 
       // test transpose
       val exempleTranspose = transpose(exemple, 12)
       println(s"Exemple transposé : $exempleTranspose")
-      play(exempleTranspose)
+      //play(exempleTranspose)
 
       // test retrograde
       val exempleRetrograde = retrograde(exemple)
       println(s"Exemple rétrograde : $exempleRetrograde")
-      play(exempleRetrograde)
+      //play(exempleRetrograde)
 
       // test mirror
       val exempleMiroir = mirror(exemple, 60)
       println(s"Exemple miroir : $exempleMiroir")
-      play(exempleMiroir)
+      //play(exempleMiroir)
 
       // test repeat
       val exempleRepete = repeat(exemple, 3)
       println(s"Exemple répété : $exempleRepete")
-      play(exempleRepete)
+      //play(exempleRepete)
 
       // test canon
       val exempleCanon = canon(exemple, 1000)
       println(s"Exemple en canon : $exempleCanon")
-      play(exempleCanon)
+      //play(exempleCanon)
 
       // test concat
       val exempleConcat = concat(exemple, transpose(exemple, 12))
       println(s"Exemple concaténé : $exempleConcat")
-      play(exempleConcat)
+      //play(exempleConcat)
 
       //Question 5
       val testRepeat = repeat(exemple, 3)
       println(s"Test repeat (exemple répété 3 fois) : $testRepeat")
-      play(testRepeat)
+      //play(testRepeat)
 
       val testCanon = canon(exemple, 1000)
       println(s"Test canon (exemple en canon avec 1000ms de décalage) : $testCanon")
-      play(testCanon)
+      //play(testCanon)
 
       val testConcat = concat(exemple, transpose(exemple, 12))
       println(s"Test concat (exemple concaténé avec sa transposition) : $testConcat")
-      play(testConcat)
+      //play(testConcat)
 
       val resultatCanonBach = canon_Bach()
       println(s"Résultat du Canon Bach : $resultatCanonBach")
